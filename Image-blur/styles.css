@@ -1,0 +1,36 @@
+:root{
+    --base: #ffc600;
+    --spacing: 10px;
+    --blur: 2px;
+}
+
+img{
+    padding: var(--spacing);
+    background-color: var(--base);
+    filter: blur(var(--blur));
+    width: 25rem;
+    height: 22rem;
+}
+
+.hl{
+    color: var(--base);
+}
+
+body{
+    text-align: center;
+    background: var(--base);
+    filter: blur(var(--blur));
+}
+
+body{
+    text-align: center;
+    background: #193549;
+    color: #fff;
+    font-family: 'helvetica neue' sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+}
+.controls{
+    margin-bottom: 50px;
+    color: #193549;
+}
