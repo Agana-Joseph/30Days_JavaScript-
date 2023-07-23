@@ -44,3 +44,21 @@
         console.log(TootalYears);
 
         // Sort thr investors by year live
+        // const oldest = inventors.sort(function(a, b){
+        //     const firstGuy = a.passed - a.year;
+        //     const nextGuy = b.passed - b.year;
+        //     if(firstGuy > nextGuy){
+        //         return 1;
+        //     } else{
+        //         return -1;
+        //     }
+        //     });
+        //     console.table(oldest);
+        const oldest = inventors.sort(function(a, b){
+            const firstGuy = a.passed - a.year;
+            const nextGuy = b.passed - b.year;
+           return firstGuy > nextGuy ? 1 : -1;
+            });
+            console.table(oldest);
+
+            // creat a list of burlvads in parish that contain "de" anywhere in the name
