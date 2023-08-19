@@ -61,4 +61,15 @@
             });
             console.table(oldest);
 
-            // creat a list of burlvads in parish that contain "de" anywhere in the name
+            // creat a list of burlvads in parish that contain "de" anywhere in the name link: https://en.wikipedia.org/wiki/Boulevards_of_Paris
+
+        const category = document.querySelector('.mw-category');
+        const links = Array.from(category.querySelectorAll('a'));
+        const de = links
+                    .map(link => link.textContent)
+                    .filter(streetName => streetName.includes('de'));
+
+
+        const alpha = people.sort(function(lastOne, nextOne){
+            console.log(lastOne)
+        });
