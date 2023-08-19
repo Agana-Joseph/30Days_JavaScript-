@@ -9,7 +9,7 @@
             { first: 'Max', last: 'Alphred', year: 1858, passed: 1947 },
         ];
 
-        const people = ['Danny, Lio', 'Badore, Lague', 'Joseph, Onahi', 'Alagi, Paul', 'Confido, Okpoto', 'Mather, Agana', 'David, Ajom', 'Blessed, Jackson', 'Comfort, Obobe', 'Olivia, Grace', 'Beson, Banabas', 'Victor, Isaac', 'Lilly, Samule', 'Shina, Ayomide', 'Ayo, Dele', 'Agi, Favor', 'Omenka Glee', 'Happiness, Ede'
+        const people = ['Danny, Lio', 'Badore, Lague', 'Joseph, Onahi', 'Alagi, Paul', 'Confido, Okpoto', 'Mather, Agana', 'David, Ajom', 'Blessed, Jackson', 'Comfort, Obobe', 'Olivia, Grace', 'Beson, Banabas', 'Victor, Isaac', 'Lilly, Samule', 'Shina, Ayomide', 'Ayo, Dele', 'Agi, Favor', 'Omenka  ', 'Happiness, Ede'
         ];
         // Array prototype filter
         const Result = inventors.filter(function(inventor){
@@ -71,5 +71,8 @@
 
 
         const alpha = people.sort(function(lastOne, nextOne){
-            console.log(lastOne)
+            const [aLast,aFirst] = lastOne.split(', ');
+            const [bLast,bFirst] = nextOne .split(', ');
+            return aLast > aFirst ? 1 : -1;
         });
+        console.log(alpha);
